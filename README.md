@@ -1,7 +1,14 @@
 npm install
 
-npm i express --save
-npm i mongoose --save
-npm i body-parser --save
+## Dependencies
 
-npm i nodemon --save-dev
+express <br/>
+mongoose<br/>
+body-parser <br/>
+bcrypt <br/>
+jsonwebtoken<br/>
+cookie-parser<br/>
+
+## devDependencies
+
+nodemon<br/>
