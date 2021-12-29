@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../../../_actions/user_action";
 
-const LoginPage = (props) => {
+const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -26,7 +26,6 @@ const LoginPage = (props) => {
     };
     dispatch(loginUser(body)).then((response) => {
       if (response.payload.loginSuccess) {
-        // props.history.push("/");
         history("/");
       } else {
         alert("Error");
