@@ -29,7 +29,7 @@ function Auth(SpecificComponent, option, adminRoute = null) {
           }
         }
       });
-    }, []);
+    }, [dispatch, history]);
 
     return <SpecificComponent {...props} />;
   }
